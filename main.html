@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Make Twitter Readable!</title>
+</head>
+<style type="text/css"> 
+body { background-color: black; color: white }
+
+    #limit {
+        max-width: 500px;
+    }
+</style>
+<body>
+<h1>Twitter to readable-text converter</h1>
+
+Enter in the <b>last</b> tweet from a Twitter thread and convert it into readable text!
+
+
+<form method="POST">
+<input name="input" type="textbox" style="font-size : 30px;">
+<input type="submit" text="Submit" style="font-size : 30px;">
+</form>
+<div><h2>Original Link:</h2></div>
+<div><b><h2><a href="{{ .Opt1 }}">{{ .Opt1 }}</a></h2></b></div>
+<div id="limit">{{ .Ans }}</div>
+</body>
+</html>
